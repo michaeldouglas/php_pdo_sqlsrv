@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  php:
+    build: .
+    ports:
+      - "8080:80"
+    expose:
+      - 80
+    container_name: sqlsrv
+    restart: always
+    volumes:
+      - .:/var/www/html
